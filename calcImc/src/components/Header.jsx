@@ -11,7 +11,7 @@ const Header = () => {
 
         <nav className="hidden md:flex space-x-8">
           <a href="#home" className="hover:text-blue-400 transition">Home</a>
-
+          <a href="#home" className="hover:text-blue-400 transition">Sobre</a>
         </nav>
 
         <div className="hidden md:block">
