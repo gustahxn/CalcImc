@@ -17,7 +17,7 @@ const Header = () => {
           <a href="#home" className="hover:text-blue-600 transition font-medium">Início</a>
           <a
             href="#start"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-semibold shadow-lg transition transform hover:scale-105"
+            className="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold shadow-lg"
           >
             Calcular Agora
           </a>
@@ -38,7 +38,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div className="md:hidden bg-white px-6 pb-4 flex flex-col space-y-4">
-           <a href="#start" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-center">
+           <a href="#start" className="bg-blue-600 text-white px-4 py-2 rounded-md text-center">
              Calcular Agora
            </a>
         </div>

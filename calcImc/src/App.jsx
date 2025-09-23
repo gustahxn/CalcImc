@@ -22,7 +22,7 @@ function App() {
                 saudável
               </span>
             </h1>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-600 font-semibold">
               Calcule seu IMC de forma rápida e precisa para começar sua jornada.
             </p>
         </div>

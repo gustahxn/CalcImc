@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Result = ({ imc }) => {
@@ -6,9 +5,10 @@ const Result = ({ imc }) => {
     if (imcValue < 18.5) return 'Abaixo do peso';
     if (imcValue < 25) return 'Peso normal';
     if (imcValue < 30) return 'Sobrepeso';
-    return 'Obesidade';
+    if (imcValue < 35) return 'Obesidade (Classe I)';
+    if (imcValue < 40) return 'Obesidade (Classe II)';
+    return 'Obesidade (Classe III)';
   };
-
 
   const getResultStyle = (imcValue) => {
     if (imcValue < 18.5) {
@@ -29,9 +29,21 @@ const Result = ({ imc }) => {
         message: 'Você está com sobrepeso. Pequenas mudanças no estilo de vida podem ajudar.'
       };
     }
+    if (imcValue < 35) {
+      return {
+        className: 'bg-red-100 text-red-900 border-orange-500',
+        message: 'Você está com obesidade grau I. Comece a considerar mudanças no estilo de vida e consulte um especialista.'
+      };
+    }
+    if (imcValue < 40) {
+      return {
+        className: 'bg-red-200 text-red-900 border-orange-600',
+        message: 'Você está com obesidade grau II. É importante procurar orientação médica o quanto antes.'
+      };
+    }
     return {
-      className: 'bg-red-100 text-red-800 border-red-400',
-      message: 'Você está na faixa de obesidade. É importante buscar orientação médica.'
+      className: 'bg-red-300 text-red-800 border-red-400',
+      message: 'Você está com obesidade grau III. Busque acompanhamento médico especializado imediatamente.'
     };
   };
 
@@ -43,7 +55,6 @@ const Result = ({ imc }) => {
   const style = getResultStyle(imc);
 
   return (
-
     <div className={`mt-8 p-6 rounded-lg border-l-4 transition-all duration-500 animate-fade-in ${style.className}`}>
       <h2 className="text-2xl font-semibold mb-2">Seu Resultado</h2>
       <div className="flex items-baseline justify-center gap-2">
