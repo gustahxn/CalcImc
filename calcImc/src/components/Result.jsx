@@ -14,7 +14,7 @@ const Result = ({ imc }) => {
     if (imcValue < 18.5) {
       return {
         className: 'bg-yellow-100 text-yellow-800 border-yellow-400',
-        message: 'Você está abaixo do peso ideal. Considere procurar um nutricionista.'
+        message: 'Você está abaixo do peso ideal. Considere procurar já um nutricionista.'
       };
     }
     if (imcValue < 25) {
