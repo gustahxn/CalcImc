@@ -57,9 +57,6 @@ const Home = () => {
     { range: "≥ 40", category: "Obesidade Grau III", color: "bg-red-600" },
   ];
 
-  const handleCalculateClick = () => {
-    window.location.href = "/calculator";
-  };
 
   const scrollToInfo = () => {
     document.getElementById("info")?.scrollIntoView({ behavior: "smooth" });
