@@ -1,14 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import InputForm from "../components/InputForm";
+import Home from "../components/Home";
 import Result from "../components/Result";
 import NotFound from "../components/NotFound/NotFound";
+import Footer from "../components/Footer";
 
 const AppRoutes = ({ setImc, imc }) => {
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
+
       <Route
-        path="/"
+        path="/calculator"
         element={
           <main className="flex flex-col items-center px-4 py-12 sm:py-16">
             <div className="max-w-3xl mx-auto text-center">
@@ -28,6 +32,7 @@ const AppRoutes = ({ setImc, imc }) => {
           </main>
         }
       />
+
       <Route
         path="/result"
         element={
@@ -38,7 +43,7 @@ const AppRoutes = ({ setImc, imc }) => {
           </main>
         }
       />
-
+      <Route path="/footer" element={<Footer />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
