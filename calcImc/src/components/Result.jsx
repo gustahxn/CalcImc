@@ -66,7 +66,7 @@ const Result = ({ imc }) => {
       <div
         className={`mt-8 p-6 rounded-lg border-l-4 transition-all duration-500 animate-fade-in ${style.className}`}
       >
-        <h2 className="text-2xl font-semibold mb-2">Seu Resultado</h2>
+        <h2 className="text-2xl font-semibold mb-2">Seu Resultado:</h2>
         <div className="flex items-baseline justify-center gap-2">
           <p className="text-5xl font-bold">{imc.toFixed(2)}</p>
           <p className="text-lg">IMC</p>
