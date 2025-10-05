@@ -172,7 +172,7 @@ const Home = () => {
                 {imcRanges.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg"
                   >
                     <div className={`w-4 h-4 rounded-full ${item.color}`}></div>
                     <div className="flex-1">
