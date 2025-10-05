@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Result = ({ imc }) => {
   const getClassification = (imcValue) => {
@@ -75,12 +76,12 @@ const Result = ({ imc }) => {
       </div>
 
       <div className="flex justify-center mt-6">
-        <button
-          onClick={() => (window.location.href = "/")}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg"
+        <Link 
+          to={"/calculator"}
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg"
         >
           Voltar
-        </button>
+        </Link>
       </div>
     </>
   );

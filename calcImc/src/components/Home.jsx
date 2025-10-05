@@ -57,7 +57,6 @@ const Home = () => {
     { range: "≥ 40", category: "Obesidade Grau III", color: "bg-red-600" },
   ];
 
-
   const scrollToInfo = () => {
     document.getElementById("info")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -153,12 +152,12 @@ const Home = () => {
                 para avaliar se seu peso está dentro de uma faixa saudável e
                 identificar possíveis riscos à saúde.
               </p>
-              <button
-                onClick={handleCalculateClick}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition transform hover:scale-105 shadow-lg"
+              <Link
+                to="/calculator"
+                className="inline-block bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 rounded-full font-semibold shadow-lg"
               >
-                Calcular meu IMC
-              </button>
+                Calcular Agora
+              </Link>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl">
