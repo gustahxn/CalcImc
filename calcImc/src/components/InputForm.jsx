@@ -42,6 +42,7 @@ const InputForm = ({ onCalculate }) => {
   };
 
   return (
+    <>
     <form onSubmit={handleSubmit} className="flex flex-col gap-6">
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <div className="relative w-full">
@@ -97,10 +98,10 @@ const InputForm = ({ onCalculate }) => {
       >
         Calcular IMC
       </button>
-      <div className="w-full m-5 bg-blue-500">
-            
-      </div>
     </form>
+    <div className="w-full m-5 bg-blue-500">
+    </div>
+      </>
   );
 };
 
