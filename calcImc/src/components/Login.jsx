@@ -53,7 +53,7 @@ const Login = () => {
             Bem-vindo de volta!
           </h1>
           <p className="text-gray-800">
-            Entre para continuar sua jornada fitness
+            Entre para continuar sua jornada fitness.
           </p>
         </div>
 
