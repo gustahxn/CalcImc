@@ -189,7 +189,7 @@ const Signup = () => {
           </Link>
         </div>
 
-        <p className="text-center text-sm text-gray-600 mt-6">
+        <p className="text-center text-sm text-gray-600 mt-12">
           Nossa plataforma necessita de autentificação de usuários para uma máxima performance.
         </p>
       </div>
