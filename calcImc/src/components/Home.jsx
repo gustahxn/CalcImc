@@ -81,7 +81,7 @@ const Home = () => {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
               Descubra seu <span className="text-blue-600">IMC</span>
               <br />
-              em segundos
+              em segundos!
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
