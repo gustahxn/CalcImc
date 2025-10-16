@@ -97,6 +97,9 @@ const InputForm = ({ onCalculate }) => {
       >
         Calcular IMC
       </button>
+      <div className="w-full m-5 bg-blue-500">
+            
+      </div>
     </form>
   );
 };
