@@ -52,7 +52,7 @@ const Login = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
             Bem-vindo de volta!
           </h1>
-          <p className="text-gray-800">
+          <p className="text-gray-900">
             Entre para continuar sua jornada fitness.
           </p>
         </div>

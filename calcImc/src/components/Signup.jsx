@@ -61,8 +61,8 @@ const Signup = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
             Crie sua conta!
           </h1>
-          <p className="text-gray-800">
-            Comece sua jornada fitness agora mesmo
+          <p className="text-gray-900">
+            Comece sua jornada fitness agora mesmo.
           </p>
         </div>
 
