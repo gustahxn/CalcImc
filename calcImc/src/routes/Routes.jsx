@@ -57,7 +57,7 @@ const AppRoutes = ({ setImc, imc }) => {
       <div class="max-w-6xl mx-auto">
         <div class="max-w-3xl mx-auto mb-16 text-center">
           <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-4 leading-relaxed">Descubra mais sobre tudo que temos a oferecer</h2>
-          <p class="text-slate-600 text-sm leading-relaxed">Mergulhe nesse mundo de vastas oportunidades, dicas de cuidado e planeje seu próximo passo na busca por uma saúde melhor. Seja <span className="text-blue-600">SoroFitness</span></p>
+          <p class="text-slate-600 text-sm leading-relaxed">Mergulhe nesse mundo de vastas oportunidades, dicas de cuidado e planeje seu próximo passo na busca por uma saúde melhor. Seja <span className="text-blue-600 font-semibold hover:text-blue-700">SoroFitness</span></p>
         </div>
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
