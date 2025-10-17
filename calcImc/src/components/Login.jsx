@@ -46,7 +46,7 @@ const Login = () => {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center px-4 py-12 sm:py-16 min-h-[calc(100vh-80px)]">
+    <main className="flex flex-col items-center bg-slate-200 justify-center px-4 py-12 sm:py-16 min-h-[calc(100vh-80px)]">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
@@ -149,10 +149,416 @@ const Login = () => {
             Criar uma conta
           </Link>
         </div>
-        <p className="text-center text-sm text-gray-600 mt-12">
-          Nossa plataforma necessita de autentificação de usuários para uma
-          máxima performance.
-        </p>
+      </div>
+      <div class="max-w-md sm:max-w-3xl lg:max-w-6xl mx-auto p-4">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mt-12 italic text-slate-900 !leading-tight">
+            O que nossos usuários dizem?
+          </h2>
+          <p class="text-[17px] mt-6 leading-relaxed text-slate-800">
+            Dê uma olhada no que as pessoas{" "}
+            <span className="font-semibold italic text-blue-600">realmente</span>{" "}
+            estão achando da nossa plataforma...
+          </p>
+        </div>
+
+        <div class="columns-1 sm:columns-2 lg:columns-3 space-y-4 mt-12">
+          <div class="break-inside-avoid p-6 rounded-lg bg-white relative w-full">
+            <div class="flex flex-wrap items-center gap-4">
+              <img
+                src="https://readymadeui.com/team-1.webp"
+                class="w-14 h-14 rounded-full border-2 border-blue-500"
+              />
+              <div>
+                <h4 class="text-slate-900 text-[15px] whitespace-nowrap font-semibold">
+                  Thiago Gutierres
+                </h4>
+                <p class="mt-0.5 text-xs text-slate-500 font-medium">
+                  Personal Trainer
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-1 mt-4">
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+            <div class="mt-6">
+              <p class="text-slate-700 font-normal text-[15px] leading-relaxed">
+                A calculadora de IMC é super prática! Comecei a acompanhar meu
+                peso semanalmente e isso me ajudou a ajustar minha alimentação e
+                treinos. Sinto mais disposição no dia a dia!
+              </p>
+            </div>
+          </div>
+
+          <div class="break-inside-avoid p-6 rounded-lg bg-white relative w-full">
+            <div class="flex flex-wrap items-center gap-4">
+              <img
+                src="https://readymadeui.com/team-2.webp"
+                class="w-14 h-14 rounded-full border-2 border-blue-500"
+              />
+              <div>
+                <h4 class="text-slate-900 text-[15px] whitespace-nowrap font-semibold">
+                  Pedro Silveira
+                </h4>
+                <p class="mt-0.5 text-xs text-slate-500 font-medium">
+                  Coach Intensivo
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-1 mt-4">
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-[#b5bdc0]"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+            <div class="mt-6">
+              <p class="text-slate-700 font-normal text-[15px] leading-relaxed">
+                Uso com meus alunos para acompanhar a evolução corporal. O
+                cálculo é preciso e as dicas sobre alimentação saudável fazem
+                toda a diferença.
+              </p>
+            </div>
+          </div>
+
+          <div class="break-inside-avoid p-6 rounded-lg bg-white relative w-full">
+            <div class="flex flex-wrap items-center gap-4">
+              <img
+                src="https://readymadeui.com/team-3.webp"
+                class="w-14 h-14 rounded-full border-2 border-blue-500"
+              />
+              <div>
+                <h4 class="text-slate-900 text-[15px] whitespace-nowrap font-semibold">
+                  Emily Rodrigues
+                </h4>
+                <p class="mt-0.5 text-xs text-slate-500 font-medium">
+                  Blogueira Fitness
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-1 mt-4">
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-[#b5bdc0]"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+            <div class="mt-6">
+              <p class="text-slate-700 font-normal text-[15px] leading-relaxed">
+                Nunca fui muito ligada a números, mas com essa ferramenta ficou
+                fácil entender meu IMC e ver como pequenas mudanças melhoraram
+                meu bem-estar.
+              </p>
+            </div>
+          </div>
+
+          <div class="break-inside-avoid p-6 rounded-lg bg-white relative w-full">
+            <div class="flex flex-wrap items-center gap-4">
+              <img
+                src="https://readymadeui.com/team-4.webp"
+                class="w-14 h-14 rounded-full border-2 border-blue-500"
+              />
+              <div>
+                <h4 class="text-slate-900 text-[15px] whitespace-nowrap font-semibold">
+                  Sofia Ferrer
+                </h4>
+                <p class="mt-0.5 text-xs text-slate-500 font-medium">
+                  Nutricionista
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-1 mt-4">
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-[#b5bdc0]"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+            <div class="mt-6">
+              <p class="text-slate-700 font-normal text-[15px] leading-relaxed">
+                Como profissional da saúde, recomendo! É uma ótima forma de
+                conscientizar as pessoas sobre a importância de manter o peso
+                ideal e cuidar da saúde.
+              </p>
+            </div>
+          </div>
+
+          <div class="break-inside-avoid p-6 rounded-lg bg-white relative w-full">
+            <div class="flex flex-wrap items-center gap-4">
+              <img
+                src="https://readymadeui.com/team-5.webp"
+                class="w-14 h-14 rounded-full border-2 border-blue-500"
+              />
+              <div>
+                <h4 class="text-slate-900 text-[15px] whitespace-nowrap font-semibold">
+                  Jonathan Moraes
+                </h4>
+                <p class="mt-0.5 text-xs text-slate-500 font-medium">
+                  Entusiasta
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-1 mt-4">
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+            <div class="mt-6">
+              <p class="text-slate-700 font-normal text-[15px] leading-relaxed">
+                Interface simples e intuitiva! Calculei meu IMC em segundos e
+                consegui acompanhar minha evolução desde o início da academia.
+              </p>
+            </div>
+          </div>
+
+          <div class="break-inside-avoid p-6 rounded-lg bg-white relative w-full">
+            <div class="flex flex-wrap items-center gap-4">
+              <img
+                src="https://readymadeui.com/team-6.webp"
+                class="w-14 h-14 rounded-full border-2 border-blue-500"
+              />
+              <div>
+                <h4 class="text-slate-900 text-[15px] whitespace-nowrap font-semibold">
+                  Lívia Aguiar
+                </h4>
+                <p class="mt-0.5 text-xs text-slate-500 font-medium">
+                  Estudante de Medicina
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-1 mt-4">
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-blue-600"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg
+                class="w-3.5 fill-[#b5bdc0]"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+            <div class="mt-6">
+              <p class="text-slate-700 font-normal text-[15px] leading-relaxed">
+                Eu sempre explico para meus colegas o quanto o IMC é importante
+                para entender a composição corporal. Essa calculadora é simples,
+                rápida e ajuda a mostrar o impacto de hábitos saudáveis no
+                resultado!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
