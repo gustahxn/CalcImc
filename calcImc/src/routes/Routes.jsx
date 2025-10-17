@@ -45,7 +45,7 @@ const AppRoutes = ({ setImc, imc }) => {
                   Calcule seu IMC de forma rápida e precisa para começar sua jornada.
                 </p>
               </div>
-              <div className="mb-20 mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
+              <div className="mb-12 mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
                 <InputForm onCalculate={setImc} />
               </div>
             </main>

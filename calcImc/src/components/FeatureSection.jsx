@@ -1,6 +1,6 @@
 const FeatureSection = () => {
   return (
-    <section className="py-20 bg-white w-screen">
+    <section className="py-12 bg-white w-screen">
       <div className="py-4">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto mb-16 text-center">
