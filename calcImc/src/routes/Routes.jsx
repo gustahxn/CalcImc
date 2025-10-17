@@ -50,25 +50,43 @@ const AppRoutes = ({ setImc, imc }) => {
               <div className="mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
                 <InputForm onCalculate={setImc} />
               </div>
-              <div class="relative before:absolute before:w-full before:h-full before:inset-0 before:bg-black/50 before:z-10">
-        <img src="https://readymadeui.com/cardImg.webp" alt="Banner Image" class="absolute inset-0 w-full h-full object-cover" />
-
-        <div class="min-h-[380px] relative z-50 h-full max-w-5xl mx-auto flex flex-col justify-center items-center text-center p-6">
-          <h2 class="text-white sm:text-4xl text-3xl font-semibold leading-tight mb-6">
-            Showcase Your Product or Service in Style
-          </h2>
-          <p class="text-base text-center text-slate-200 leading-relaxed">
-            Highlight what makes your brand unique with a bold, modern banner design.
-            Perfect for product launches, service promotions, or portfolio features,
-            this layout helps you connect with your audience and inspire them to take action.
-            Make your first impression unforgettable.
-          </p>
-          <button type="button"
-            class="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-medium outline-none bg-blue-600 hover:bg-blue-700 border-2 border-blue-600 transition-all duration-300 cursor-pointer">
-            Getting started now
-          </button>
-        </div>
-      </div>
+              <div class="flex items-start max-w-screen-lg mx-auto">
+                <div class="w-full">
+                  <div class="flex items-center w-full">
+                    <div class="w-7 h-7 shrink-0 mx-[-1px] bg-blue-600 flex items-center justify-center rounded-full">
+                      <span class="text-sm text-white font-semibold">1</span>
+                    </div>
+                    <div class="w-full h-[3px] mx-4 rounded-lg bg-blue-600"></div>
+                  </div>
+                  <div class="mt-2 mr-4">
+                    <h6 class="text-sm font-semibold text-blue-600">Personal Info</h6>
+                    <p class="text-xs text-gray-500">Completed</p>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <div class="flex items-center w-full">
+                    <div class="w-7 h-7 shrink-0 mx-[-1px] bg-blue-600 flex items-center justify-center rounded-full">
+                      <span class="text-sm text-white font-semibold">2</span>
+                    </div>
+                    <div class="w-full h-[3px] mx-4 rounded-lg bg-blue-600"></div>
+                  </div>
+                  <div class="mt-2 mr-4">
+                    <h6 class="text-sm font-semibold text-blue-600">Education</h6>
+                    <p class="text-xs text-gray-500">Completed</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex items-center">
+                    <div class="w-7 h-7 shrink-0 mx-[-1px] bg-gray-300 flex items-center justify-center rounded-full">
+                      <span class="text-sm text-white font-semibold">3</span>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <h6 class="text-sm font-semibold text-blue-600">Review</h6>
+                    <p class="text-xs text-gray-500">Pending</p>
+                  </div>
+                </div>
+              </div>
             </main>
           </PrivateRoute>
         }
