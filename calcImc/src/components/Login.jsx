@@ -156,7 +156,7 @@ const Login = () => {
             O que nossos usuários dizem?
           </h2>
           <div className="border-2 mt-6 bg-white rounded-2xl text-center w-full shadow-xl p-2 transition-all duration-500">
-            <p class="text-[17px] leading-relaxed text-black font-semibold">
+            <p class="text-[17px] leading-relaxed text-black">
               Dê uma olhada no que as pessoas{" "}
               <span className="font-semibold italic text-blue-600">realmente</span>{" "}
               estão achando da nossa plataforma...
