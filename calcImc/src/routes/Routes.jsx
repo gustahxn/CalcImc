@@ -52,7 +52,7 @@ const AppRoutes = ({ setImc, imc }) => {
               </div>
               
             </main>
-            <div class="flex items-start max-w-screen-lg mx-auto">
+            <div class="mt=16 flex items-start max-w-screen-lg mx-auto">
                 <div class="w-full">
                   <div class="flex items-center w-full">
                     <div class="w-7 h-7 shrink-0 mx-[-1px] bg-blue-600 flex items-center justify-center rounded-full">
@@ -61,8 +61,8 @@ const AppRoutes = ({ setImc, imc }) => {
                     <div class="w-full h-[3px] mx-4 rounded-lg bg-blue-600"></div>
                   </div>
                   <div class="mt-2 mr-4">
-                    <h6 class="text-sm font-semibold text-blue-600">Personal Info</h6>
-                    <p class="text-xs text-gray-500">Completed</p>
+                    <h6 class="text-sm font-semibold text-blue-600">Buscar ajuda</h6>
+                    <p class="text-xs text-black">Completado!</p>
                   </div>
                 </div>
                 <div class="w-full">
@@ -73,8 +73,8 @@ const AppRoutes = ({ setImc, imc }) => {
                     <div class="w-full h-[3px] mx-4 rounded-lg bg-blue-600"></div>
                   </div>
                   <div class="mt-2 mr-4">
-                    <h6 class="text-sm font-semibold text-blue-600">Education</h6>
-                    <p class="text-xs text-gray-500">Completed</p>
+                    <h6 class="text-sm font-semibold text-blue-600">Criar conta</h6>
+                    <p class="text-xs text-black">Completado!</p>
                   </div>
                 </div>
                 <div>
@@ -84,8 +84,8 @@ const AppRoutes = ({ setImc, imc }) => {
                     </div>
                   </div>
                   <div class="mt-2">
-                    <h6 class="text-sm font-semibold text-blue-600">Review</h6>
-                    <p class="text-xs text-gray-500">Pending</p>
+                    <h6 class="text-sm font-semibold text-blue-600">Calcular Indíce de Massa Corporal</h6>
+                    <p class="text-xs text-black">Em progresso...</p>
                   </div>
                 </div>
               </div>
