@@ -48,7 +48,7 @@ const AppRoutes = ({ setImc, imc }) => {
                 </p>
               </div>
 
-              <div className="mb-18 mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
+              <div className="mb-20 mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
                 <InputForm onCalculate={setImc} />
               </div>
               <FeatureSection />
@@ -62,7 +62,7 @@ const AppRoutes = ({ setImc, imc }) => {
         element={
           <PrivateRoute>
             <main className="flex flex-col items-center px-4 py-12 sm:py-16">
-              <div className="w-full max-w-lg bg-white rounded-xl shadow-2xl mb-18 p-8 transition-all duration-500">
+              <div className="w-full max-w-lg bg-white rounded-xl shadow-2xl mb-20 p-8 transition-all duration-500">
                 <Result imc={imc} />
               </div>
               <FeatureSection />
