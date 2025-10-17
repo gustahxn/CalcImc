@@ -23,7 +23,6 @@ const AppRoutes = ({ setImc, imc }) => {
           </PublicRoute>
         }
       />
-
       <Route
         path="/signup"
         element={
@@ -43,20 +42,17 @@ const AppRoutes = ({ setImc, imc }) => {
                   <span className="text-blue-600 italic">saudável</span>
                 </h1>
                 <p className="mt-4 text-lg text-gray-600 font-semibold">
-                  Calcule seu IMC de forma rápida e precisa para começar sua
-                  jornada.
+                  Calcule seu IMC de forma rápida e precisa para começar sua jornada.
                 </p>
               </div>
-
-              <div className="mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500 mb-20">
+              <div className="mb-20 mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
                 <InputForm onCalculate={setImc} />
               </div>
-              <FeatureSection />
             </main>
+            <FeatureSection />
           </PrivateRoute>
         }
       />
-
       <Route
         path="/result"
         element={
@@ -65,14 +61,12 @@ const AppRoutes = ({ setImc, imc }) => {
               <div className="w-full max-w-lg bg-white rounded-xl shadow-2xl mb-20 p-8 transition-all duration-500">
                 <Result imc={imc} />
               </div>
-              <FeatureSection />
             </main>
+            <FeatureSection />
           </PrivateRoute>
         }
       />
-
       <Route path="/footer" element={<Footer />} />
-
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
