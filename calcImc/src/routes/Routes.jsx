@@ -130,7 +130,7 @@ const AppRoutes = ({ setImc, imc }) => {
               </svg>
             </div>
             <h3 class="text-slate-900 text-lg font-semibold mb-3">Alcance</h3>
-            <p class="text-slate-600 text-sm leading-relaxed"> Seja você um grupo, uma empresa, uma pessoa, utilize de tudo que temos a oferecer sem perder funções.</p>
+            <p class="text-slate-600 text-sm leading-relaxed"> Seja você um grupo, uma empresa, uma pessoa, utilize de tudo que temos a oferecer sem perder nada, sempre maximizando aquilo que você tem a sua disposição, para alcançar o que deseja.</p>
           </div>
 
           <div class="text-center">
