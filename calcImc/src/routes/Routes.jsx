@@ -50,7 +50,9 @@ const AppRoutes = ({ setImc, imc }) => {
               <div className="mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
                 <InputForm onCalculate={setImc} />
               </div>
-              <div class="flex items-start max-w-screen-lg mx-auto">
+              
+            </main>
+            <div class="flex items-start max-w-screen-lg mx-auto">
                 <div class="w-full">
                   <div class="flex items-center w-full">
                     <div class="w-7 h-7 shrink-0 mx-[-1px] bg-blue-600 flex items-center justify-center rounded-full">
@@ -87,7 +89,6 @@ const AppRoutes = ({ setImc, imc }) => {
                   </div>
                 </div>
               </div>
-            </main>
           </PrivateRoute>
         }
       />
