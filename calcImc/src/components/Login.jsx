@@ -155,8 +155,8 @@ const Login = () => {
           <h2 class="text-4xl font-bold mt-12 italic text-slate-900 !leading-tight">
             O que nossos usuários dizem?
           </h2>
-          <div className="bg-white rounded-2xl text-center w-full py-4 px-4">
-            <p class="text-[17px] mt-6 leading-relaxed text-slate-800">
+          <div className="mt-6 bg-white rounded-2xl text-center w-full py-2 px-4">
+            <p class="text-[17px] leading-relaxed text-black font-semibold">
               Dê uma olhada no que as pessoas{" "}
               <span className="font-semibold italic text-blue-600">realmente</span>{" "}
               estão achando da nossa plataforma...
