@@ -84,7 +84,7 @@ const AppRoutes = ({ setImc, imc }) => {
                     </div>
                   </div>
                   <div class="mt-2">
-                    <h6 class="text-sm font-semibold text-blue-600">Calcular IMC</h6>
+                    <h6 class="text-sm font-semibold text-blue-600">Calcular</h6>
                     <p class="text-xs text-black">Em progresso...</p>
                   </div>
                 </div>
