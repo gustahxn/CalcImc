@@ -48,7 +48,7 @@ const AppRoutes = ({ setImc, imc }) => {
                 </p>
               </div>
 
-              <div className="mb-20 mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500">
+              <div className="mt-10 w-full max-w-lg bg-white rounded-xl shadow-2xl p-8 transition-all duration-500 mb-20">
                 <InputForm onCalculate={setImc} />
               </div>
               <FeatureSection />

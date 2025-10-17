@@ -1,14 +1,24 @@
 const FeatureSection = () => {
-    return (
-        <section className="py-20 px-6 bg-white w-full">
-          <div class="py-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="max-w-3xl mx-auto mb-16 text-center">
-                <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-4 leading-relaxed">Descubra <span className="underline italic decoration-4 decoration-blue-600 font-bold">mais</span> sobre tudo que temos a oferecer!</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">Mergulhe nesse mundo de vastas oportunidades, dicas de cuidado e planeje seu próximo passo na busca por uma saúde melhor. Seja <span className="font-bold hover:text-blue-600">SoroFitness</span></p>
-                </div>
+  return (
+    <section className="mt-0 px-0 bg-white w-full">
+      <div class="py-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="max-w-3xl mx-auto mb-16 text-center">
+            <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-4 leading-relaxed">
+              Descubra{" "}
+              <span className="underline italic decoration-4 decoration-blue-600 font-bold">
+                mais
+              </span>{" "}
+              sobre tudo que temos a oferecer!
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Mergulhe nesse mundo de vastas oportunidades, dicas de cuidado e
+              planeje seu próximo passo na busca por uma saúde melhor. Seja{" "}
+              <span className="font-bold hover:text-blue-600">SoroFitness</span>
+            </p>
+          </div>
 
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
           <div class="text-center">
             <div class="w-12 h-12 p-3 rounded-md flex items-center justify-center mx-auto bg-blue-50 mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-700 w-full h-full inline-block" viewBox="0 0 100 100">
@@ -97,11 +107,11 @@ const FeatureSection = () => {
                     <h3 class="text-slate-900 text-lg font-semibold mb-3">Comunicação</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Adapte nosso produto às suas necessidades com uma comunicação perfeita para sua equipe.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-            </section>
-    )
-}
+                 </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default FeatureSection
+export default FeatureSection;
