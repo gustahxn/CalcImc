@@ -155,11 +155,13 @@ const Login = () => {
           <h2 class="text-4xl font-bold mt-12 italic text-slate-900 !leading-tight">
             O que nossos usuários dizem?
           </h2>
-          <p class="text-[17px] mt-6 leading-relaxed text-slate-800">
-            Dê uma olhada no que as pessoas{" "}
-            <span className="font-semibold italic text-blue-600">realmente</span>{" "}
-            estão achando da nossa plataforma...
-          </p>
+          <div className="bg-white rounded-xl text-center w-full">
+            <p class="text-[17px] mt-6 leading-relaxed text-slate-800">
+              Dê uma olhada no que as pessoas{" "}
+              <span className="font-semibold italic text-blue-600">realmente</span>{" "}
+              estão achando da nossa plataforma...
+            </p>
+          </div>
         </div>
 
         <div class="columns-1 sm:columns-2 lg:columns-3 space-y-4 mt-12">
