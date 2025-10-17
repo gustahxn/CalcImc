@@ -79,12 +79,12 @@ const AppRoutes = ({ setImc, imc }) => {
                 </div>
                 <div>
                   <div class="flex items-center">
-                    <div class="w-7 h-7 shrink-0 mx-[-1px] bg-gray-300 flex items-center justify-center rounded-full">
+                    <div class="w-7 h-7 shrink-0 mx-[-1px] bg-gray-600 flex items-center justify-center rounded-full">
                       <span class="text-sm text-white font-semibold">3</span>
                     </div>
                   </div>
                   <div class="mt-2">
-                    <h6 class="text-sm font-semibold text-blue-600">Calcular Indíce de Massa Corporal</h6>
+                    <h6 class="text-sm font-semibold text-blue-600">Calcular IMC</h6>
                     <p class="text-xs text-black">Em progresso...</p>
                   </div>
                 </div>
