@@ -46,7 +46,7 @@ const Login = () => {
   };
 
   return (
-    <main className="flex flex-col items-center bg-slate-200 justify-center px-4 py-12 sm:py-16 min-h-[calc(100vh-80px)]">
+    <main className="flex flex-col items-center bg-slate-100 justify-center px-4 py-12 sm:py-16 min-h-[calc(100vh-80px)]">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
