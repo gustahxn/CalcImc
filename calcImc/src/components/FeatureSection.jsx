@@ -1,7 +1,6 @@
 const FeatureSection = () => {
   return (
-    <section className="mt-0 px-0 bg-white w-full">
-      <div class="py-4">
+      <div class="mt-0 px-0 bg-white w-full">
         <div class="max-w-6xl mx-auto">
           <div class="max-w-3xl mx-auto mb-16 text-center">
             <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-4 leading-relaxed">
@@ -110,7 +109,6 @@ const FeatureSection = () => {
                  </div>
         </div>
       </div>
-    </section>
   );
 };
 
