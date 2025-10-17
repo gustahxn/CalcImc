@@ -52,6 +52,7 @@ const AppRoutes = ({ setImc, imc }) => {
               </div>
               
             </main>
+            <section className="py-20 px-6 bg-white">
           <div class="py-4">
       <div class="max-w-6xl mx-auto">
         <div class="max-w-3xl mx-auto mb-16 text-center">
@@ -151,6 +152,7 @@ const AppRoutes = ({ setImc, imc }) => {
                 </div>
               </div>
             </div>
+            </section>
           </PrivateRoute>
         }
       />
