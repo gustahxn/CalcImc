@@ -4,12 +4,9 @@ const FeatureSection = () => {
       <div className="py-4">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-4 leading-relaxed">
+            <h2 className="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-8 leading-relaxed">
               Descubra mais sobre tudo que temos a oferecer!
             </h2>
-            <p className="text-slate-600 text-sm leading-relaxed">
-              Mergulhe nesse mundo de vastas oportunidades, dicas de cuidado e planeje seu próximo passo na busca por uma saúde melhor. Seja <span className="font-bold hover:text-blue-600">SoroFitness</span>
-            </p>
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
             <div className="text-center">
