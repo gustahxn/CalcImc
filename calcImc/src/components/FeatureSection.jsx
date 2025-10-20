@@ -90,7 +90,7 @@ const FeatureSection = () => {
                 </svg>
               </div>
               <h3 className="text-slate-900 text-lg font-semibold mb-3">Alcance</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">Seja você um grupo, uma empresa, uma pessoa, utilize de tudo que temos a oferecer sem perder nada, sempre maximizando aquilo que você tem a sua disposição, para alcançar o que deseja.</p>
+              <p className="text-slate-600 text-sm leading-relaxed">Seja você um grupo, uma empresa, uma pessoa, utilize de tudo que temos a oferecer sem perder nada, para alcançar o que deseja.</p>
             </div>
           </div>
         </div>
