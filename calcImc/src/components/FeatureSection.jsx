@@ -60,6 +60,22 @@ const FeatureSection = () => {
               <p className="text-slate-600 text-sm leading-relaxed">Desfrute de funcionalidades e dicas repletas de valor e honestidade. Nosso projeto foi criado para entregar resultados sem lentidão.</p>
             </div>
             <div className="text-center">
+              <div className="w-12 h-12 p-3 rounded-md flex items-center justify-center mx-auto bg-blue-50 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="text-blue-700 w-full h-full inline-block" viewBox="0 0 682.667 682.667">
+                  <defs>
+                    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                      <path d="M0 512h512V0H0Z" data-original="#000000" />
+                    </clipPath>
+                  </defs>
+                  <g fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="30" clipPath="url(#a)" transform="matrix(1.33 0 0 -1.33 0 682.667)">
+                    <path d="M226 15v60c0 16.568-13.432 30-30 30H76c-16.568 0-30-13.432-30-30V15Zm-45 165c0-24.853-20.147-45-45-45s-45 20.147-45 45 20.147 45 45 45 45-20.147 45-45ZM466 15v60c0 16.568-13.432 30-30 30H316c-16.568 0-30-13.432-30-30V15Zm-45 165c0-24.853-20.147-45-45-45s-45 20.147-45 45 20.147 45 45 45 45-20.147 45-45Zm-75 167v-50.294L286 347h-60.002L166 296.706V347h-15c-41.421 0-75 33.579-75 75s33.579 75 75 75h210c41.421 0 75-33.579 75-75s-33.579-75-75-75Zm-105 75h30m-90 0h30m90 0h30" data-original="#000000" />
+                  </g>
+                </svg>
+              </div>
+              <h3 className="text-slate-900 text-lg font-semibold mb-3">Comunicação</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">Adapte nosso produto às suas necessidades com uma comunicação perfeita para sua equipe.</p>
+            </div>
+            <div className="text-center">
               <div className="w-12 h-12 p-3 rounded-md flex items-center justify-center mx-auto bg-orange-50 mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" className="text-orange-700 w-full h-full inline-block" viewBox="0 0 682.667 682.667">
                   <defs>
@@ -75,22 +91,6 @@ const FeatureSection = () => {
               </div>
               <h3 className="text-slate-900 text-lg font-semibold mb-3">Alcance</h3>
               <p className="text-slate-600 text-sm leading-relaxed">Seja você um grupo, uma empresa, uma pessoa, utilize de tudo que temos a oferecer sem perder nada, sempre maximizando aquilo que você tem a sua disposição, para alcançar o que deseja.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 p-3 rounded-md flex items-center justify-center mx-auto bg-blue-50 mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="text-blue-700 w-full h-full inline-block" viewBox="0 0 682.667 682.667">
-                  <defs>
-                    <clipPath id="a" clipPathUnits="userSpaceOnUse">
-                      <path d="M0 512h512V0H0Z" data-original="#000000" />
-                    </clipPath>
-                  </defs>
-                  <g fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="30" clipPath="url(#a)" transform="matrix(1.33 0 0 -1.33 0 682.667)">
-                    <path d="M226 15v60c0 16.568-13.432 30-30 30H76c-16.568 0-30-13.432-30-30V15Zm-45 165c0-24.853-20.147-45-45-45s-45 20.147-45 45 20.147 45 45 45 45-20.147 45-45ZM466 15v60c0 16.568-13.432 30-30 30H316c-16.568 0-30-13.432-30-30V15Zm-45 165c0-24.853-20.147-45-45-45s-45 20.147-45 45 20.147 45 45 45 45-20.147 45-45Zm-75 167v-50.294L286 347h-60.002L166 296.706V347h-15c-41.421 0-75 33.579-75 75s33.579 75 75 75h210c41.421 0 75-33.579 75-75s-33.579-75-75-75Zm-105 75h30m-90 0h30m90 0h30" data-original="#000000" />
-                  </g>
-                </svg>
-              </div>
-              <h3 className="text-slate-900 text-lg font-semibold mb-3">Comunicação</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">Adapte nosso produto às suas necessidades com uma comunicação perfeita para sua equipe.</p>
             </div>
           </div>
         </div>
