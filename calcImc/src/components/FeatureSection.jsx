@@ -4,7 +4,7 @@ const FeatureSection = () => {
       <div className="py-4">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-slate-900 text-3xl lg:text-4xl font-semibold text-center mb-6 leading-snug">
+            <h2 className="text-slate-900 text-3xl lg:text-4xl font-semibold text-center my-8 leading-snug">
               Descubra mais sobre tudo que temos a oferecer!
             </h2>
 
