@@ -149,7 +149,7 @@ const Home = () => {
               </p>
               <Link
                 to="/calculator"
-                className="inline-block hover:bg-blue-700 text-white transition transform hover:scale-105 rounded-3xl font-semibold shadow-lg tracking-wide w-48 text-center"
+                className="inline-block bg-blue-500 text-white hover:bg-blue-600 transition transform hover:scale-105 px-8 py-4 rounded-3xl font-semibold shadow-lg tracking-wide w-48 text-center"
               >
                 Calcular Agora
               </Link>
