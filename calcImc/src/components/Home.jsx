@@ -89,13 +89,13 @@ const Home = () => {
                 to="/calculator"
                 className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 rounded-full font-semibold shadow-lg tracking-wide"
               >
-                CALCULAR AGORA
+                Calcular Agora
               </Link>
               <button
                 onClick={scrollToInfo}
                 className="border-2 border-white bg-white text-slate-900 hover:bg-blue-50 px-8 py-4 rounded-full font-semibold shadow-lg tracking-wide"
               >
-                SAIBA MAIS
+                Saiba Mais
               </button>
             </div>
           </div>
