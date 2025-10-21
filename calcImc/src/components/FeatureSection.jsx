@@ -3,12 +3,12 @@ const FeatureSection = () => {
     <section className="py-12 mb-12 bg-white w-screen">
       <div className="py-4">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-8 leading-relaxed">
               Descubra mais sobre tudo que temos a oferecer!
             </h2>
           </div>
-          <div className="border-t border-gray-200 mb-4 mt-2" />
+          <div className="border-t border-gray-200 mb-12 mt-4" />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
             <div className="text-center">
               <div className="w-12 h-12 p-3 rounded-md flex items-center justify-center mx-auto bg-blue-50 mb-6">
