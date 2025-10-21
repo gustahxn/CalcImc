@@ -64,7 +64,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <section className="relative py-20 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-white to-blue-300"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-white to-blue-400"></div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center space-y-6">
             <div className="inline-block">
