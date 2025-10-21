@@ -78,13 +78,13 @@ const Home = () => {
               </svg>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-tight text-gray-900 mb-36">
+            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-tight text-gray-900 ">
               Descubra seu <span className="text-blue-600">IMC</span>
               <br />
               em segundos!
             </h1>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 pt-4">
+            <div className="flex flex-col sm:flex justify-center items-center mt-16 pt-4">
               <Link
                 to="/calculator"
                 className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 rounded-full font-semibold shadow-lg"
