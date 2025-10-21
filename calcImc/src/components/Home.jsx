@@ -129,7 +129,7 @@ const Home = () => {
 
       <section
         id="info"
-        className="py-20 px-6 bg-gradient-to-tf from-white to-blue-600"
+        className="py-20 px-6 bg-gradient-to-br from-blue-500 to-white"
       >
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
