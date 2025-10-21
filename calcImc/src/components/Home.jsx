@@ -87,15 +87,15 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 pt-4">
               <Link
                 to="/calculator"
-                className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 font-semibold shadow-lg tracking-wide"
+                className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 rounded-xl text-white px-8 py-4 font-semibold shadow-lg tracking-wide"
               >
-                Calcular 
+                CALCULAR AGORA
               </Link>
               <button
                 onClick={scrollToInfo}
-                className="border-2 border-white bg-white text-slate-700 hover:bg-blue-50 font-semibold py-3 px-8  text-lg transition tracking-wide"
+                className="border-2 border-white bg-white text-slate-700 hover:bg-blue-50 rounded-xl font-semibold py-3 px-8  text-lg transition tracking-wide"
               >
-                Saiba Mais
+                SAIBA MAIS
               </button>
             </div>
           </div>
