@@ -84,16 +84,16 @@ const Home = () => {
               em segundos!
             </h1>
 
-            <div className="flex flex-col sm:flex-row gap-4 space-y-6 justify-center items-center mt-8 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 pt-4">
               <Link
                 to="/calculator"
-                className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 rounded-full font-semibold shadow-lg tracking-wide"
+                className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 rounded-full font-semibold shadow-lg tracking-wide w-48 text-center"
               >
                 Calcular Agora
               </Link>
               <button
                 onClick={scrollToInfo}
-                className="border-2 border-white bg-white text-slate-900 hover:bg-blue-50 px-8 py-4 rounded-full font-semibold shadow-lg tracking-wide"
+                className="border-2 border-white bg-white text-slate-900 hover:bg-blue-50 px-8 py-4 rounded-full font-semibold shadow-lg tracking-wide w-48 text-center"
               >
                 Saiba Mais
               </button>
