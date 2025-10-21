@@ -84,7 +84,7 @@ const Home = () => {
               em segundos!
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl font-extrabold leading-tight tracking-tight text-gray-900 max-w-3xl mx-auto">
               Calcule seu Índice de Massa Corporal e receba orientações
               personalizadas para alcançar seus objetivos de saúde
             </p>
