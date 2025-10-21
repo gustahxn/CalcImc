@@ -8,7 +8,7 @@ const FeatureSection = () => {
               Descubra mais sobre tudo que temos a oferecer!
             </h2>
           </div>
-          <div className="border-t border-gray-200 mb-12 mt-4" />
+          <div className="border-t border-gray-300 mb-12 mt-4" />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
             <div className="text-center">
               <div className="w-12 h-12 p-3 rounded-md flex items-center justify-center mx-auto bg-blue-50 mb-6">
@@ -96,6 +96,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
+      <div className="border-t border-gray-300 mb-12 mt-4" />
     </section>
   );
 };
