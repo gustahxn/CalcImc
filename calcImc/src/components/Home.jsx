@@ -78,7 +78,7 @@ const Home = () => {
               </svg>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-tight text-gray-900 mb-12">
+            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-tight text-gray-900 mb-36">
               Descubra seu <span className="text-blue-600">IMC</span>
               <br />
               em segundos!
