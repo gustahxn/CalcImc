@@ -81,7 +81,7 @@ const Home = () => {
               <h1 className="heading-font text-5xl md:text-6xl font-semibold leading-tight tracking-wide text-black">
                 Descubra seu IMC em segundos!
               </h1>
-              <div className="border-b border-slate-2 00 w-full mt-8"></div>
+              <div className="border-b border-black rounded-full w-full mt-8"></div>
 
             </div>
             <div className="flex flex-col pt-6 sm:flex-row gap-4 justify-center items-center mt-8">
