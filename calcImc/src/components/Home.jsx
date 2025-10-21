@@ -78,7 +78,7 @@ const Home = () => {
               </svg>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-wide text-gray-900 ">
+            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-wide text-gray-900">
               Descubra seu <span className="text-blue-600">IMC</span>
               <br />
               em segundos!
@@ -134,7 +134,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-900">
+              <h2 className="text-4xl font-semibold leading-relaxed tracking-wide text-gray-900">
                 O que é o IMC?
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
