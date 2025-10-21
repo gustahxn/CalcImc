@@ -78,13 +78,13 @@ const Home = () => {
               </svg>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight text-gray-900">
+            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-tight text-gray-900">
               Descubra seu <span className="text-blue-600">IMC</span>
               <br />
               em segundos!
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-700 font-semibold max-w-2xl mx-auto leading-snug">
               Calcule seu Índice de Massa Corporal e receba orientações
               personalizadas para alcançar seus objetivos de saúde
             </p>
