@@ -62,40 +62,40 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen">
-      <section className="relative py-20 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-white to-blue-400"></div>
+    <div className="min-h-screen" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+        .heading-font {
+          font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+        }
+      `}</style>
+
+      <section className="relative py-16 px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-blue-50"></div>
+        
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center space-y-6">
-            <div className="inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 640"
-                className="w-20 h-20 mx-auto text-blue-500"
-                fill="currentColor"
-              >
-                <path d="M96 176C96 149.5 117.5 128 144 128C170.5 128 192 149.5 192 176L192 288L448 288L448 176C448 149.5 469.5 128 496 128C522.5 128 544 149.5 544 176L544 192L560 192C586.5 192 608 213.5 608 240L608 288C625.7 288 640 302.3 640 320C640 337.7 625.7 352 608 352L608 400C608 426.5 586.5 448 560 448L544 448L544 464C544 490.5 522.5 512 496 512C469.5 512 448 490.5 448 464L448 352L192 352L192 464C192 490.5 170.5 512 144 512C117.5 512 96 490.5 96 464L96 448L80 448C53.5 448 32 426.5 32 400L32 352C14.3 352 0 337.7 0 320C0 302.3 14.3 288 32 288L32 240C32 213.5 53.5 192 80 192L96 192L96 176z" />
-              </svg>
+            <div className="inline-block flex flex-col">
             </div>
+            <div className="inline-block">
+              <h1 className="heading-font text-5xl md:text-6xl font-semibold leading-tight tracking-wide text-black">
+                Descubra seu IMC em segundos!
+              </h1>
+              <div className="border-b border-slate-2 00 w-full mt-8"></div>
 
-            <h1 className="text-5xl md:text-6xl font-semibold leading-relaxed tracking-wide text-gray-900">
-              Descubra seu <span className="text-blue-600">IMC</span>
-              <br />
-              em segundos!
-            </h1>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 pt-4">
+            </div>
+            <div className="flex flex-col pt-6 sm:flex-row gap-4 justify-center items-center mt-8">
               <Link
                 to="/calculator"
-                className="bg-blue-500 hover:bg-blue-600 transition transform hover:scale-105 text-white px-8 py-4 rounded-3xl font-semibold shadow-lg tracking-wide w-48 text-center"
+                className="hover:border-b-2 border-2 border-b-4 border-slate-700 bg-gradient-to-t from-white to-sky-100 px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
               >
-                Calcular Agora
+                Calculadora
               </Link>
               <button
                 onClick={scrollToInfo}
-                className="bg-blue-500 text-white hover:bg-blue-600 transition transform hover:scale-105 px-8 py-4 rounded-3xl font-semibold shadow-lg tracking-wide w-48 text-center"
+                className="hover:border-b-2 border-2 border-b-4 border-slate-700 bg-gradient-to-t from-white to-sky-100 px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
               >
-                Saiba Mais
+                Saber mais 
               </button>
             </div>
           </div>
@@ -104,7 +104,7 @@ const Home = () => {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">
+          <h2 className="heading-font text-4xl font-bold text-center text-gray-900 mb-16">
             Por que usar nossa calculadora?
           </h2>
 
@@ -115,7 +115,7 @@ const Home = () => {
                 className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2"
               >
                 <div className="text-blue-600 mb-4">{feature.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="heading-font text-2xl font-bold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -134,23 +134,23 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-  <h2 className="text-5xl md:text-6xl font-bold leading-tight tracking-wide text-gray-900">
-    O que é o IMC?
-  </h2>
+              <div className="mb-16">
+                <h2 className="heading-fonttext-5xl italic md:text-4xl font-semibold leading-tight tracking-wider text-slate-800">
+                  O que <span className="text-blue-600">realmente</span> é o IMC?
+                </h2>
+              </div>
 
-  <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-gray-700 italic leading-loose">
-    O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
-  </blockquote>
+              <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-slate-900 italic leading-loose">
+                O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
+              </blockquote>
 
-  <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-gray-700 italic leading-loose">
-    Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
-  </blockquote>
-</div>
-
-
+              <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-slate-900 italic leading-loose">
+                Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
+              </blockquote>
+            </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+              <h3 className="heading-font text-2xl font-bold text-gray-900 mb-6 text-center">
                 Tabela de Classificação
               </h3>
               <div className="space-y-3">
