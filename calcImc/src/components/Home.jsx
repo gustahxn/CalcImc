@@ -84,7 +84,7 @@ const Home = () => {
               em segundos!
             </h1>
 
-            <div className="flex flex-col sm:flex justify-center items-center mt-16 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 pt-4">
               <Link
                 to="/calculator"
                 className="bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 text-white px-8 py-4 rounded-full font-semibold shadow-lg"
@@ -93,7 +93,7 @@ const Home = () => {
               </Link>
               <button
                 onClick={scrollToInfo}
-                className="border-2 border-white bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full text-lg transition"
+                className="border-2 border-white bg-white text-slate-900 hover:bg-blue-50 font-bold py-3 px-8 rounded-full text-lg transition"
               >
                 Saiba Mais
               </button>
