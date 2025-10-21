@@ -64,7 +64,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <section className="relative py-20 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-white to-blue-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-white to-blue-700"></div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center space-y-8">
             <div className="inline-block">
@@ -93,7 +93,7 @@ const Home = () => {
               </Link>
               <button
                 onClick={scrollToInfo}
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full text-lg transition"
+                className="border-2 border-white bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full text-lg transition"
               >
                 Saiba Mais
               </button>
@@ -129,7 +129,7 @@ const Home = () => {
 
       <section
         id="info"
-        className="py-20 px-6 bg-gradient-to-br from-blue-50 to-indigo-50"
+        className="py-20 px-6 bg-gradient-to-br from-blue-80 to-indigo-50"
       >
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
