@@ -94,9 +94,9 @@ const FeatureSection = () => {
               <p className="text-slate-600 text-sm leading-relaxed">Seja você um grupo, uma empresa, uma pessoa, utilize de tudo que temos a oferecer sem perder nada, para alcançar o que deseja.</p>
             </div>
           </div>
+          <div className="border-t border-gray-300 mb-12 mt-4" />
         </div>
       </div>
-      <div className="border-t border-gray-300 mb-12 mt-4" />
     </section>
   );
 };
