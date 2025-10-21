@@ -4,9 +4,10 @@ const FeatureSection = () => {
       <div className="py-4">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-slate-900 text-3xl lg:text-4xl font-bold text-center mb-8 leading-relaxed">
+            <h2 className="text-slate-900 text-3xl lg:text-4xl font-semibold text-center mb-6 leading-snug">
               Descubra mais sobre tudo que temos a oferecer!
             </h2>
+
           </div>
           <div className="border-t border-gray-300 mb-12 mt-16" />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
