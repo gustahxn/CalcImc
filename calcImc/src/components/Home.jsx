@@ -104,7 +104,7 @@ const Home = () => {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-font text-4xl font-bold text-center text-gray-900 mb-16">
+          <h2 className="heading-font text-4xl font-semibold text-center text-gray-900 mb-16">
             Por que usar nossa calculadora?
           </h2>
 
@@ -115,7 +115,7 @@ const Home = () => {
                 className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2"
               >
                 <div className="text-blue-600 mb-4">{feature.icon}</div>
-                <h3 className="heading-font text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="heading-font text-2xl font-medium text-gray-900 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
