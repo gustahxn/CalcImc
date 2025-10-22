@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer class="tracking-wide bg-gradient-to-br from-slate-600 via-slate-800 to-blue-600 pt-8 pb-6 px-10">
+    <footer class="tracking-wide bg-gradient-to-br from-slate-700 via-slate-800 to-black pt-8 pb-6 px-10">
       <div class="max-w-screen-xl mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
