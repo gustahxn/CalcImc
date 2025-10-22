@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-6 px-6">
+    <footer className="bg-gray-800 text-gray-400 py-6 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <p className="text-sm font-medium tracking-wide">
           © 2025 Soro Fitness. Desenvolvido em Sorocaba, SP,{" "}
