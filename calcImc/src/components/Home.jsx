@@ -104,7 +104,7 @@ const Home = () => {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-font text-4xl font-semibold text-center text-gray-900 mb-16">
+          <h2 className="heading-font text-4xl font-semibold text-center tracking-wide text-gray-900 mb-16">
             Por que usar nossa calculadora?
           </h2>
 
@@ -135,7 +135,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="mb-16">
-                <h2 className="heading-font text-5xl md:text-4xl font-medium leading-tight tracking-wider text-gray-900">
+                <h2 className="heading-font text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-900">
                   O que <span className="text-blue-600">realmente</span> é o IMC?
                 </h2>
               </div>
