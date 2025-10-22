@@ -4,7 +4,7 @@ import { auth } from "../firebaseConfig";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 const Footer = () => {
   return (
-    <footer className="tracking-wide bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 pt-2 pb-2 px-10">
+    <footer className="tracking-wide bg-gradient-to-br from-gray-100 via-blue-50 to-white pt-2 pb-2 px-10">
       <div className="max-w-screen-xl mx-auto text-center justify-center items-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-12">
           <div>
