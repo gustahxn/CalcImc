@@ -79,7 +79,11 @@ const Home = () => {
             </div>
             <div className="inline-block">
               <h1 className="heading-font text-5xl md:text-6xl font-semibold leading-tight tracking-wide text-black">
-                Descubra seu IMC em <span className="text-blue-600 font-bold bg-gradient-to-r from-blue-600 via-sky-200 to-indigo-400">segundos</span>!
+                Descubra seu IMC em{' '}
+                <span className="font-bold bg-gradient-to-r from-blue-600 via-sky-200 to-indigo-400 bg-clip-text text-transparent">
+                  segundos
+                </span>
+                !
               </h1>
               <div className="border-b border-black rounded-full w-full mt-8"></div>
 
