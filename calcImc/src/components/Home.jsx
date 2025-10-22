@@ -135,7 +135,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="mb-16">
-                <h2 className="heading-fonttext-5xl italic md:text-4xl font-semibold leading-tight tracking-wider text-slate-800">
+                <h2 className="heading-font text-5xl md:text-4xl font-medium leading-tight tracking-wider text-gray-900">
                   O que <span className="text-blue-600">realmente</span> é o IMC?
                 </h2>
               </div>
