@@ -78,11 +78,11 @@ const Home = () => {
             <div className="inline-block flex flex-col">
             </div>
             <div className="inline-block">
-              <h1 className="leading-12 heading-font text-5xl md:text-6xl font-semibold tracking-wide text-black">
+              <h1 className="leading-[4.0rem] heading-font text-5xl md:text-6xl font-semibold tracking-tight text-black">
                 Descubra seu IMC em{' '}
                   segundos.
                 <br />
-                <span className="pt-2 mt-2 font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
+                <span className="inline-block mt-4 font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
                   Na melhor do mercado.
                 </span>
               </h1>
@@ -90,13 +90,13 @@ const Home = () => {
             <div className="flex flex-col pt-2 sm:flex-row gap-4 justify-center items-center mt-4">
               <Link
                 to="/calculator"
-                className="hover:border-b-2 border-2 border-b-4 border-slate-700 bg-gradient-to-t from-white to-sky-100 px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
+                className="hover:border-b-[0.1rem] border-[0.1rem] border-b-[0.2rem] border-slate-700 bg-white px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
               >
                 Calculadora
               </Link>
               <button
                 onClick={scrollToInfo}
-                className="hover:border-b-2 border-2 border-b-4 border-slate-700 bg-gradient-to-t from-white to-sky-100 px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
+                className="hover:border-b-[0.1rem] border-[0.1rem] border-b-[0.2rem] border-slate-700 bg-white px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
               >
                 Saber mais 
               </button>
@@ -139,15 +139,15 @@ const Home = () => {
             <div className="space-y-8">
               <div className="mb-16">
                 <h2 className="heading-font text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-900">
-                  O que <span className="text-blue-600">realmente</span> é o IMC?
+                  O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
                 </h2>
               </div>
 
-              <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-slate-900 italic leading-loose">
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl text-slate-900 italic leading-loose">
                 O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
               </blockquote>
 
-              <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-slate-900 italic leading-loose">
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl text-slate-900 italic leading-loose">
                 Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
               </blockquote>
             </div>
