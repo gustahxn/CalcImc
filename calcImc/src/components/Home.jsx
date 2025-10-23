@@ -78,17 +78,17 @@ const Home = () => {
             <div className="inline-block flex flex-col">
             </div>
             <div className="inline-block">
-              <h1 className="heading-font leading-relaxed text-5xl md:text-6xl font-semibold leading-6 tracking-wide text-black">
+              <h1 className="heading-font leading-relaxed text-5xl md:text-6xl font-semibold leading-8 tracking-wide text-black">
                 Descubra seu IMC em{' '}
                   segundos
                 !
                 <br />
-                <span className="font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent tracking-wider">
+                <span className="font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
                   Na melhor do mercado.
                 </span>
               </h1>
             </div>
-            <div className="flex flex-col pt-6 sm:flex-row gap-4 justify-center items-center mt-8">
+            <div className="flex flex-col pt-6 sm:flex-row gap-4 justify-center items-center mt-4">
               <Link
                 to="/calculator"
                 className="hover:border-b-2 border-2 border-b-4 border-slate-700 bg-gradient-to-t from-white to-sky-100 px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
