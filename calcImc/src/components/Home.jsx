@@ -78,7 +78,7 @@ const Home = () => {
             <div className="inline-block flex flex-col">
             </div>
             <div className="inline-block">
-              <h1 className="leading-8 heading-font text-5xl md:text-6xl font-semibold tracking-wide text-black">
+              <h1 className="leading-12 heading-font text-5xl md:text-6xl font-semibold tracking-wide text-black">
                 Descubra seu IMC em{' '}
                   segundos.
                 <br />
