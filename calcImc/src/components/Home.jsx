@@ -132,10 +132,10 @@ const Home = () => {
 
       <section
         id="info"
-        className="py-20 px-6 bg-gradient-to-b from-white to-blue-100 border-t border-black"
+        className="py-20 px-6 bg-gradient-to-b from-white to-blue-100 border-px border-t border-slate-100 "
       >
-        <div className="max-w-6xl mx-auto border-t border-black">
-          <div className="grid md:grid-cols-2 gap-12 items-center border-t border-black">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="mb-16">
                 <h2 className="heading-font font-sans text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-800">
