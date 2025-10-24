@@ -132,10 +132,10 @@ const Home = () => {
 
       <section
         id="info"
-        className="py-20 px-6 bg-gradient-to-br from-blue-80 to-indigo-50"
+        className="py-20 px-6 bg-gradient-to-br from-sky-200 to-blue-400"
       >
         <div className="max-w-6xl mx-auto">
-          <div className="bg-slate-500 p-8 rounded-2xl shadow-xl">
+          <div className="opacity-75 p-8 rounded-2xl shadow-xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
                 <div className="mb-16">
