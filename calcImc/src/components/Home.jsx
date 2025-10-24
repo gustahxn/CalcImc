@@ -144,7 +144,7 @@ const Home = () => {
                 </h2>
               </div>
 
-              <blockquote className="border-px border-l-4 border-t-4 pt-6 border-slate-500/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)] pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
+              <blockquote className="border-l-px border-t-px pt-6 border-slate-500/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)] pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
                 O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
               </blockquote>
 
