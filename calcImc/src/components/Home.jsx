@@ -130,51 +130,104 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="info" className="py-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-cyan-200 to-sky-300"></div>
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-400/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-cyan-300/40 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-sky-200/30 rounded-full blur-3xl"></div>
+      <section id="info" className="relative py-24 px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-100 to-blue-200"></div>
+        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[120px]"></div>
+        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-indigo-300/30 rounded-full blur-[120px]"></div>
+        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-cyan-200/30 rounded-full blur-[100px]"></div>
         
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="bg-white/40 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/30">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Entenda o IMC
+            </h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              O Índice de Massa Corporal é a medida mais utilizada para avaliar se seu peso está adequado
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/40">
               <div className="space-y-6">
-                <div>
-                  <h2 className="heading-font text-4xl font-semibold leading-tight tracking-tight text-gray-900 mb-8">
-                    O que é o IMC?
-                  </h2>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="heading-font text-xl font-semibold text-gray-900 mb-2">
+                      Como é calculado?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      O IMC divide seu peso (kg) pela altura ao quadrado (m²). Simples e eficaz para uma avaliação inicial.
+                    </p>
+                  </div>
                 </div>
 
-                <p className="text-base text-gray-800 leading-relaxed">
-                  O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="heading-font text-xl font-semibold text-gray-900 mb-2">
+                      Por que usar?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Reconhecido pela OMS, ajuda a identificar riscos de saúde relacionados ao peso de forma rápida.
+                    </p>
+                  </div>
+                </div>
 
-                <p className="text-base text-gray-800 leading-relaxed">
-                  Embora não seja perfeito, é útil para avaliar se seu peso está em uma faixa saudável.
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="heading-font text-xl font-semibold text-gray-900 mb-2">
+                      Limitações
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Não considera massa muscular ou distribuição de gordura. Use como referência inicial.
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <div className="bg-white/50 backdrop-blur-lg p-6 rounded-2xl shadow-xl border border-white/40">
-                <h3 className="heading-font text-xl font-semibold text-gray-900 mb-5 text-center">
-                  Classificação
-                </h3>
-                <div className="space-y-2">
-                  {imcRanges.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-3 p-3 bg-white/50 rounded-lg backdrop-blur-sm"
-                    >
-                      <div className={`w-3 h-3 rounded-full ${item.color}`}></div>
-                      <div className="flex-1">
-                        <div className="font-medium text-sm text-gray-900">
+            <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/40">
+              <h3 className="heading-font text-2xl font-semibold text-gray-900 mb-6">
+                Faixas de Classificação
+              </h3>
+              <div className="space-y-3">
+                {imcRanges.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-between p-4 bg-white/70 rounded-xl hover:bg-white/90 transition-all"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className={`w-3 h-3 rounded-full ${item.color} shadow-lg`}></div>
+                      <div>
+                        <div className="font-semibold text-gray-900">
                           {item.category}
                         </div>
-                        <div className="text-xs text-gray-600">IMC {item.range}</div>
                       </div>
                     </div>
-                  ))}
-                </div>
+                    <div className="text-sm font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-lg">
+                      {item.range}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-6 p-4 bg-blue-50/80 rounded-xl border border-blue-200/50">
+                <p className="text-sm text-gray-700 text-center">
+                  <span className="font-semibold">Dica:</span> Consulte um profissional de saúde para uma avaliação completa
+                </p>
               </div>
             </div>
           </div>
