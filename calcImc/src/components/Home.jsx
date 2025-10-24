@@ -131,9 +131,10 @@ const Home = () => {
       </section>
 
       <section
-        id="info"
-        className="py-20 px-6 bg-gradient-to-b from-white to-blue-100 border-px border-t border-slate-100 "
+           id="info"
+            className="py-20 px-6 bg-gradient-to-b from-white to-slate-100 border-t border-slate-300/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]"
       >
+
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
