@@ -130,104 +130,49 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="info" className="relative py-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-100 to-blue-200"></div>
-        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[120px]"></div>
-        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-indigo-300/30 rounded-full blur-[120px]"></div>
-        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-cyan-200/30 rounded-full blur-[100px]"></div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Entenda o IMC
-            </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              O Índice de Massa Corporal é a medida mais utilizada para avaliar se seu peso está adequado
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/40">
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="heading-font text-xl font-semibold text-gray-900 mb-2">
-                      Como é calculado?
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      O IMC divide seu peso (kg) pela altura ao quadrado (m²). Simples e eficaz para uma avaliação inicial.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="heading-font text-xl font-semibold text-gray-900 mb-2">
-                      Por que usar?
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      Reconhecido pela OMS, ajuda a identificar riscos de saúde relacionados ao peso de forma rápida.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="heading-font text-xl font-semibold text-gray-900 mb-2">
-                      Limitações
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      Não considera massa muscular ou distribuição de gordura. Use como referência inicial.
-                    </p>
-                  </div>
-                </div>
+      <section
+        id="info"
+        className="py-20 px-6 bg-gradient-to-br from-blue-80 to-indigo-50"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="mb-16">
+                <h2 className="heading-font text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-900">
+                  O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
+                </h2>
               </div>
+
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl text-slate-900 italic leading-loose">
+                O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
+              </blockquote>
+
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl text-slate-900 italic leading-loose">
+                Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
+              </blockquote>
             </div>
 
-            <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/40">
-              <h3 className="heading-font text-2xl font-semibold text-gray-900 mb-6">
-                Faixas de Classificação
+            <div className="bg-white p-8 rounded-2xl shadow-xl">
+              <h3 className="heading-font text-2xl font-bold text-gray-900 mb-6 text-center">
+                Tabela de Classificação
               </h3>
               <div className="space-y-3">
                 {imcRanges.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-4 bg-white/70 rounded-xl hover:bg-white/90 transition-all"
+                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg"
                   >
-                    <div className="flex items-center gap-3">
-                      <div className={`w-3 h-3 rounded-full ${item.color} shadow-lg`}></div>
-                      <div>
-                        <div className="font-semibold text-gray-900">
-                          {item.category}
-                        </div>
+                    <div className={`w-4 h-4 rounded-full ${item.color}`}></div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-gray-900">
+                        {item.category}
                       </div>
-                    </div>
-                    <div className="text-sm font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-lg">
-                      {item.range}
+                      <div className="text-sm text-gray-600">
+                        IMC {item.range}
+                      </div>
                     </div>
                   </div>
                 ))}
-              </div>
-              
-              <div className="mt-6 p-4 bg-blue-50/80 rounded-xl border border-blue-200/50">
-                <p className="text-sm text-gray-700 text-center">
-                  <span className="font-semibold">Dica:</span> Consulte um profissional de saúde para uma avaliação completa
-                </p>
               </div>
             </div>
           </div>
