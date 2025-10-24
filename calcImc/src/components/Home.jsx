@@ -139,12 +139,12 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="mb-16">
-                <h2 className="font-sans text-7xl md:text-4xl leading-tight text-gray-800">
+                <h2 className="font-sans text-7xl md:text-3xl sm:text-xl leading-tight text-gray-800">
                   O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
                 </h2>
               </div>
 
-              <blockquote className="text-justify border-l-4 border-pink-600 pl-6 text-lg font-light text-slate-700 font-sans leading-loose tracking-wide">
+              <blockquote className="text-left border-l-4 border-pink-600 pl-6 text-lg font-light text-slate-700 font-sans leading-loose tracking-wide">
                 O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
               </blockquote>
 
