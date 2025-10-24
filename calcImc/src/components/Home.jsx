@@ -130,59 +130,56 @@ const Home = () => {
         </div>
       </section>
 
-      <section
-  id="info"
-  className="py-20 px-6 bg-gradient-to-br from-sky-100/60 via-blue-200/60 to-blue-400/70 backdrop-blur-md"
->
-  <div className="max-w-6xl mx-auto">
-    <div className="bg-white/50 backdrop-blur-md p-8 rounded-2xl shadow-xl">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
-          <div className="mb-16">
-            <h2 className="heading-font text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-900">
-              O que{" "}
-              <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
-                realmente
-              </span>{" "}
-              é o IMC?
-            </h2>
-          </div>
+      <section id="info" className="py-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-cyan-200 to-sky-300"></div>
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-400/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-cyan-300/40 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-sky-200/30 rounded-full blur-3xl"></div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="bg-white/40 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/30">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div>
+                  <h2 className="heading-font text-4xl font-semibold leading-tight tracking-tight text-gray-900 mb-8">
+                    O que é o IMC?
+                  </h2>
+                </div>
 
-          <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-slate-900 italic leading-loose">
-            O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
-          </blockquote>
+                <p className="text-base text-gray-800 leading-relaxed">
+                  O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.
+                </p>
 
-          <blockquote className="border-l-4 border-blue-500 pl-6 text-xl text-slate-900 italic leading-loose">
-            Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
-          </blockquote>
-        </div>
+                <p className="text-base text-gray-800 leading-relaxed">
+                  Embora não seja perfeito, é útil para avaliar se seu peso está em uma faixa saudável.
+                </p>
+              </div>
 
-        <div className="bg-white/70 backdrop-blur-lg p-8 rounded-2xl shadow-xl">
-          <h3 className="heading-font text-2xl font-bold text-gray-900 mb-6 text-center">
-            Tabela de Classificação
-          </h3>
-          <div className="space-y-3">
-            {imcRanges.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-4 p-4 bg-white/60 rounded-lg backdrop-blur-sm"
-              >
-                <div className={`w-4 h-4 rounded-full ${item.color}`}></div>
-                <div className="flex-1">
-                  <div className="font-semibold text-gray-900">
-                    {item.category}
-                  </div>
-                  <div className="text-sm text-gray-600">IMC {item.range}</div>
+              <div className="bg-white/50 backdrop-blur-lg p-6 rounded-2xl shadow-xl border border-white/40">
+                <h3 className="heading-font text-xl font-semibold text-gray-900 mb-5 text-center">
+                  Classificação
+                </h3>
+                <div className="space-y-2">
+                  {imcRanges.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 p-3 bg-white/50 rounded-lg backdrop-blur-sm"
+                    >
+                      <div className={`w-3 h-3 rounded-full ${item.color}`}></div>
+                      <div className="flex-1">
+                        <div className="font-medium text-sm text-gray-900">
+                          {item.category}
+                        </div>
+                        <div className="text-xs text-gray-600">IMC {item.range}</div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
     </div>
   );
 };
