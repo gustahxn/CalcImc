@@ -135,36 +135,37 @@ const Home = () => {
         className="py-20 px-6 bg-blue-50"
       >
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="mb-16">
-                <h2 className="heading-font font-sans text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-800">
-                  O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
-                </h2>
-              </div>
+          <div className="mb-16">
+            <h2 className="heading-font font-sans text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-800 text-center">
+              O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="flex flex-col h-full justify-between space-y-6">
               <blockquote className="border-l-4 border-blue-500 pl-6 text-xl font-extralight font-sans leading-loose tracking-wide">
                 Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
               </blockquote>
-            </div>
-            <div
-                  class="bg-white border border-gray-200 shadow-sm w-full max-w-sm rounded-xl overflow-hidden mx-auto mt-4">
-                  <div class="p-6">
-                        <div>
-                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-indigo-700" viewBox="0 0 24 24">
-                              <g data-name="Flat Color">
-                              <path d="M12 22.75a10.75 10.75 0 0 1 0-21.5 10.53 10.53 0 0 1 4.82 1.15.75.75 0 0 1-.68 1.34 9 9 0 0 0-4.14-1A9.25 9.25 0 1 0 21.25 12a2 2 0 0 0 0-.25.75.75 0 1 1 1.5-.14V12A10.76 10.76 0 0 1 12 22.75z" data-original="#20bf55" />
-                              <path d="M11.82 15.41a.7.7 0 0 1-.52-.22l-4.83-4.74a.75.75 0 0 1 0-1.06.77.77 0 0 1 1.07 0l4.29 4.23 9.65-9.49a.77.77 0 0 1 1.07 0 .75.75 0 0 1 0 1.06l-10.18 10a.74.74 0 0 1-.55.22z" data-original="#20bf55" />
-                              </g>
-                              </svg>
-                        </div>
-                        <div class="mt-4">
-                              <h4 class="text-base font-semibold">Secure Payments</h4>
-                              <p class="mt-2 text-sm text-slate-500 leading-relaxed">Your transactions are protected with advanced encryption, ensuring safety and peace of mind.</p>
-                        </div>
+
+              <div className="bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden">
+                <div className="p-6">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-indigo-700" viewBox="0 0 24 24">
+                      <g data-name="Flat Color">
+                        <path d="M12 22.75a10.75 10.75 0 0 1 0-21.5 10.53 10.53 0 0 1 4.82 1.15.75.75 0 0 1-.68 1.34 9 9 0 0 0-4.14-1A9.25 9.25 0 1 0 21.25 12a2 2 0 0 0 0-.25.75.75 0 1 1 1.5-.14V12A10.76 10.76 0 0 1 12 22.75z" />
+                        <path d="M11.82 15.41a.7.7 0 0 1-.52-.22l-4.83-4.74a.75.75 0 0 1 0-1.06.77.77 0 0 1 1.07 0l4.29 4.23 9.65-9.49a.77.77 0 0 1 1.07 0 .75.75 0 0 1 0 1.06l-10.18 10a.74.74 0 0 1-.55.22z" />
+                      </g>
+                    </svg>
                   </div>
+                  <div className="mt-4">
+                    <h4 className="text-base font-semibold">Secure Payments</h4>
+                    <p className="mt-2 text-sm text-slate-500 leading-relaxed">Your transactions are protected with advanced encryption, ensuring safety and peace of mind.</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-xl">
+            <div className="bg-white p-8 rounded-2xl shadow-xl h-full">
               <h3 className="heading-font text-2xl font-bold text-gray-900 mb-6 text-center">
                 Tabela de Classificação
               </h3>
