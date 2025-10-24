@@ -132,7 +132,7 @@ const Home = () => {
 
       <section
            id="info"
-            className="py-20 px-6 bg-gradient-to-b from-slate-100 to-whie border-br border-slate-300/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]"
+            className="py-20 px-6 bg-gradient-to-b from-slate-100 to-white border-br border-slate-300/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]"
       >
 
         <div className="max-w-6xl mx-auto">
