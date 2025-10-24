@@ -130,76 +130,54 @@ const Home = () => {
         </div>
       </section>
 
-     <section id="info" className="py-20 px-6 bg-blue-50">
-            <div className="max-w-6xl mx-auto">
-            <div className="mb-16">
-                  <h2 className="heading-font font-sans text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-800 text-center">
-                  O que{" "}
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
-                  realmente
-                  </span>{" "}
-                  é o IMC?
-                  </h2>
+      <section
+        id="info"
+        className="py-20 px-6 bg-gradient-to-b from-white to-blue-100"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="mb-16">
+                <h2 className="heading-font font-sans text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-800">
+                  O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
+                </h2>
+              </div>
+
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
+                O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
+              </blockquote>
+
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
+                Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
+              </blockquote>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch">
-                  {/* Bloco de texto e card pequeno */}
-                  <div className="flex flex-col justify-between bg-white rounded-2xl shadow-lg p-8 h-full">
-                  <div>
-                  <blockquote className="border-l-4 border-blue-500 pl-6 text-lg font-light font-sans leading-relaxed tracking-wide mb-6">
-                        Embora o IMC não seja uma medida perfeita, é uma ferramenta útil
-                        para avaliar se seu peso está dentro de uma faixa saudável e
-                        identificar possíveis riscos à saúde.
-                  </blockquote>
-
-                  <h4 className="heading-font text-xl font-semibold text-gray-900 mb-4">
-                        Segurança garantida
-                  </h4>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                        Resultados expressivos, de maneira confiável e segura.
-                  </p>
-                  </div>
-
-                  <div className="flex items-center justify-center mt-auto pt-4">
-                  <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-10 h-10 fill-indigo-700"
-                        viewBox="0 0 24 24"
+            <div className="bg-white p-8 rounded-2xl shadow-xl">
+              <h3 className="heading-font text-2xl font-bold text-gray-900 mb-6 text-center">
+                Tabela de Classificação
+              </h3>
+              <div className="space-y-3">
+                {imcRanges.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg"
                   >
-                        <g data-name="Flat Color">
-                        <path d="M12 22.75a10.75 10.75 0 0 1 0-21.5 10.53 10.53 0 0 1 4.82 1.15.75.75 0 0 1-.68 1.34 9 9 0 0 0-4.14-1A9.25 9.25 0 1 0 21.25 12a2 2 0 0 0 0-.25.75.75 0 1 1 1.5-.14V12A10.76 10.76 0 0 1 12 22.75z" />
-                        <path d="M11.82 15.41a.7.7 0 0 1-.52-.22l-4.83-4.74a.75.75 0 0 1 0-1.06.77.77 0 0 1 1.07 0l4.29 4.23 9.65-9.49a.77.77 0 0 1 1.07 0 .75.75 0 0 1 0 1.06l-10.18 10a.74.74 0 0 1-.55.22z" />
-                        </g>
-                  </svg>
+                    <div className={`w-4 h-4 rounded-full ${item.color}`}></div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-gray-900">
+                        {item.category}
+                      </div>
+                      <div className="text-sm text-gray-600">
+                        IMC {item.range}
+                      </div>
+                    </div>
                   </div>
-                  </div>
-
-                  {/* Tabela de classificação */}
-                  <div className="bg-white p-8 rounded-2xl shadow-lg h-full flex flex-col justify-center">
-                  <h3 className="heading-font text-2xl font-bold text-gray-900 mb-6 text-center">
-                  Tabela de Classificação
-                  </h3>
-                  <div className="space-y-3">
-                  {imcRanges.map((item, index) => (
-                        <div
-                        key={index}
-                        className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg"
-                        >
-                        <div className={`w-4 h-4 rounded-full ${item.color}`}></div>
-                        <div className="flex-1">
-                        <div className="font-semibold text-gray-900">
-                              {item.category}
-                        </div>
-                        <div className="text-sm text-gray-600">IMC {item.range}</div>
-                        </div>
-                        </div>
-                  ))}
-                  </div>
-                  </div>
+                ))}
+              </div>
             </div>
-            </div>
-            </section>
-
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
