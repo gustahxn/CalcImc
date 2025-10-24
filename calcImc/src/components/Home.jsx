@@ -148,7 +148,7 @@ const Home = () => {
                 O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
               </blockquote>
 
-              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
+              <blockquote className="border-l-4 border-slate-300/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)] pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
                 Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
               </blockquote>
             </div>
