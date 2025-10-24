@@ -131,15 +131,15 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 sm:space-y-8">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug text-gray-900 text-center md:text-left">
+              <h2 className="text-3xl sm:text-4xl md:text-4xl font-regular leading-snug text-gray-900 text-center md:text-left">
                 O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
               </h2>
 
-              <blockquote className="text-left border-l-4 border-pink-600 pl-4 sm:pl-6 text-sm sm:text-base font-light text-slate-700 leading-relaxed tracking-wide">
+              <blockquote className="text-left border-l-4 font-sans border-pink-600 pl-4 sm:pl-6 text-lg sm:text-base font-regular text-slate-700 leading-relaxed tracking-wide">
                 O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
               </blockquote>
 
-              <blockquote className="text-left border-l-4 border-pink-600 pl-4 sm:pl-6 text-sm sm:text-base font-light text-slate-700 leading-relaxed tracking-wide">
+              <blockquote className="text-left border-l-4 border-pink-600 pl-4 font-sans sm:pl-6 text-lg sm:text-base font-regular text-slate-700 leading-relaxed tracking-wide">
                 Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
               </blockquote>
             </div>
