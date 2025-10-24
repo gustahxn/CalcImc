@@ -154,7 +154,7 @@ const Home = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-2xl font-semibold font-sans text-gray-600 mb-6 text-center tracking-normal">
+              <h3 className="text-2xl font-regular font-sans text-gray-800 mb-6 text-center tracking-normal">
                 Tabela de Classificação
               </h3>
               <div className="space-y-3">
