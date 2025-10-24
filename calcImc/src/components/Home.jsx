@@ -72,35 +72,42 @@ const Home = () => {
 
       <section className="relative py-16 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-blue-50"></div>
-        <div className="max-w-6xl mx-auto relative z-10 text-center space-y-6">
-          <h1 className="leading-[4.0rem] heading-font text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-black">
-            Descubra seu IMC em segundos.
-            <br />
-            <span className="inline-block mt-4 font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
-              Na melhor do mercado.
-            </span>
-          </h1>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
-            <Link
-              to="/calculator"
-              className="hover:border-b-[0.1rem] border-[0.1rem] border-b-[0.2rem] border-slate-700 bg-white px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
-            >
-              Calculadora
-            </Link>
-            <button
-              onClick={scrollToInfo}
-              className="hover:border-b-[0.1rem] border-[0.1rem] border-b-[0.2rem] border-slate-700 bg-white px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
-            >
-              Saber mais 
-            </button>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="text-center space-y-6">
+            <div className="inline-block flex flex-col">
+            </div>
+            <div className="inline-block">
+              <h1 className="leading-[4.0rem] heading-font text-5xl md:text-6xl font-semibold tracking-tight text-black">
+                Descubra seu IMC em{' '}
+                  segundos.
+                <br />
+                <span className="inline-block mt-4 font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">
+                  Na melhor do mercado.
+                </span>
+              </h1>
+            </div>
+            <div className="flex flex-col pt-2 sm:flex-row gap-4 justify-center items-center mt-4">
+              <Link
+                to="/calculator"
+                className="hover:border-b-[0.1rem] border-[0.1rem] border-b-[0.2rem] border-slate-700 bg-white px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
+              >
+                Calculadora
+              </Link>
+              <button
+                onClick={scrollToInfo}
+                className="hover:border-b-[0.1rem] border-[0.1rem] border-b-[0.2rem] border-slate-700 bg-white px-10 py-3 rounded-2xl font-bold shadow-lg w-52 text-center"
+              >
+                Saber mais 
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-font text-3xl sm:text-4xl md:text-4xl font-semibold text-center tracking-wide text-gray-900 mb-16">
+          <h2 className="heading-font text-4xl font-semibold text-center tracking-wide text-gray-900 mb-16">
             Por que usar nossa calculadora?
           </h2>
 
@@ -108,13 +115,13 @@ const Home = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2"
+                className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2"
               >
                 <div className="text-blue-600 mb-4">{feature.icon}</div>
-                <h3 className="heading-font text-xl sm:text-2xl font-medium text-gray-900 mb-3">
+                <h3 className="heading-font text-2xl font-medium text-gray-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -123,43 +130,45 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section3 - Informações do IMC */}
       <section
-        id="info"
-        className="py-16 sm:py-20 px-4 sm:px-6 md:px-6 bg-gradient-to-b from-slate-100 to-white shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]"
+           id="info"
+            className="py-20 px-6 bg-gradient-to-b from-slate-100 to-white border-br border-slate-300/10 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]"
       >
+
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 sm:space-y-8">
-              <h2 className="text-5xl sm:text-4xl md:text-4xl font-regular leading-snug text-gray-900 text-center md:text-left">
-                O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
-              </h2>
+            <div className="space-y-8">
+              <div className="mb-16">
+                <h2 className="heading-font font-sans text-5xl md:text-4xl font-medium leading-tight tracking-wide text-gray-800">
+                  O que <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-600 bg-clip-text text-transparent">realmente</span> é o IMC?
+                </h2>
+              </div>
 
-              <blockquote className="text-left border-l-4 font-sans border-pink-600 pl-4 sm:pl-6 text-lg sm:text-base font-regular text-slate-700 leading-relaxed tracking-wide">
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
                 O Índice de Massa Corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Ele é calculado dividindo o peso pela altura ao quadrado.
               </blockquote>
 
-              <blockquote className="text-left border-l-4 border-pink-600 pl-4 font-sans sm:pl-6 text-lg sm:text-base font-regular text-slate-700 leading-relaxed tracking-wide">
+              <blockquote className="border-l-4 border-pink-600 pl-6 text-xl font-light text-slate-700 font-sans leading-loose tracking-wide">
                 Embora o IMC não seja uma medida perfeita, é uma ferramenta útil para avaliar se seu peso está dentro de uma faixa saudável e identificar possíveis riscos à saúde.
               </blockquote>
             </div>
 
-            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 text-center tracking-normal">
+            <div className="bg-white p-8 rounded-2xl shadow-xl">
+              <h3 className="heading-font text-2xl font-sans font-medium text-gray-900 mb-6 text-center">
                 Tabela de Classificação
               </h3>
-              <div className="space-y-2 sm:space-y-3">
+              <div className="space-y-3">
                 {imcRanges.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg"
+                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg"
                   >
-                    <div className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full ${item.color}`}></div>
+                    <div className={`w-4 h-4 rounded-full ${item.color}`}></div>
                     <div className="flex-1">
-                      <div className="font-semibold text-gray-900 text-sm sm:text-base">
+                      <div className="font-semibold text-gray-900">
                         {item.category}
                       </div>
-                      <div className="text-xs sm:text-sm text-gray-600">
+                      <div className="text-sm text-gray-600">
                         IMC {item.range}
                       </div>
                     </div>
