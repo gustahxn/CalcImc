@@ -178,13 +178,12 @@ const Login = () => {
                   type="button"
                   onClick={handlePasswordReset}
                   disabled={resetLoading}
-                  className="px-2 bg-white text-gray-500 hover:text-blue-500 font-medium disabled:opacity-50 transition"
+                  className="px-2 bg-white text-gray-500 group-hover:text-blue-500 font-medium disabled:opacity-50 transition"
                 >
                   {resetLoading ? "Enviando..." : "Esqueceu a senha?"}
                 </button>
               </div>
             </div>
-
             <button
               type="submit"
               disabled={loading}
