@@ -94,7 +94,7 @@ const Login = () => {
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <svg
                     className="w-5 h-5 text-gray-400"
-                    fill="currentColor"
+                    fill="currentColor"   
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -121,7 +121,16 @@ const Login = () => {
                 <p className="text-red-700 text-sm font-medium">{error}</p>
               </div>
             )}
-
+            <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-300"></div>
+            </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-2 bg-white text-gray-500">
+                  Esqueceu a senha?
+                </span>
+              </div>
+            </div>
             <button
               type="submit"
               disabled={loading}
@@ -130,7 +139,6 @@ const Login = () => {
               {loading ? "Entrando..." : "Entrar"}
             </button>
           </form>
-
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-300"></div>
@@ -141,7 +149,6 @@ const Login = () => {
               </span>
             </div>
           </div>
-
           <Link
             to="/signup"
             className="block w-full text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-3 px-4 rounded-lg transition"
