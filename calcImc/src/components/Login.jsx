@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../firebaseConfig";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -8,11 +8,14 @@ const Login = () => {
   const [senha, setSenha] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [resetLoading, setResetLoading] = useState(false);
+  const [resetMessage, setResetMessage] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
+    setResetMessage("");
     setLoading(true);
 
     try {
@@ -42,6 +45,36 @@ const Login = () => {
       }
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handlePasswordReset = async () => {
+    if (!email) {
+      setError("Por favor, digite seu e-mail no campo acima.");
+      return;
+    }
+    setError("");
+    setResetMessage("");
+    setResetLoading(true);
+
+    try {
+      await sendPasswordResetEmail(auth, email);
+      setResetMessage("Se o email for cadastrado em nosso sistema, um email de recuperação será enviado. Verifique sua caixa de entrada.");
+    } catch (err) {
+      console.error("Password Reset Error:", err.code);
+      
+      switch (err.code) {
+        case "auth/invalid-email":
+          setError("Formato de e-mail inválido.");
+          break;
+        case "auth/user-not-found":
+          setError("Nenhuma conta encontrada com este e-mail.");
+          break;
+        default:
+          setError("Erro ao enviar e-mail de recuperação. Tente novamente.");
+      }
+    } finally {
+      setResetLoading(false);
     }
   };
 
@@ -79,7 +112,11 @@ const Login = () => {
                   type="email"
                   placeholder="seu@email.com"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    setError("");
+                    setResetMessage("");
+                  }}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                   required
                 />
@@ -109,7 +146,11 @@ const Login = () => {
                   type="password"
                   placeholder="••••••••"
                   value={senha}
-                  onChange={(e) => setSenha(e.target.value)}
+                  onChange={(e) => {
+                    setSenha(e.target.value);
+                    setError("");
+                    setResetMessage("");
+                  }}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                   required
                 />
@@ -121,16 +162,29 @@ const Login = () => {
                 <p className="text-red-700 text-sm font-medium">{error}</p>
               </div>
             )}
-            <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-300"></div>
-            </div>
+
+            {resetMessage && (
+              <div className="bg-orange-50 border-l-4 border-yellow-500 p-4 rounded">
+                <p className="text-yellow-700 text-sm font-medium">{resetMessage}</p>
+              </div>
+            )}
+
+            <div className="relative group">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-300 group-hover:border-blue-500 transition-colors"></div>
+              </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">
-                  Esqueceu a senha?
-                </span>
+                <button
+                  type="button"
+                  onClick={handlePasswordReset}
+                  disabled={resetLoading}
+                  className="px-2 bg-white text-gray-500 hover:text-blue-500 font-medium disabled:opacity-50 transition"
+                >
+                  {resetLoading ? "Enviando..." : "Esqueceu a senha?"}
+                </button>
               </div>
             </div>
+
             <button
               type="submit"
               disabled={loading}
@@ -139,6 +193,7 @@ const Login = () => {
               {loading ? "Entrando..." : "Entrar"}
             </button>
           </form>
+
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-300"></div>
@@ -149,6 +204,7 @@ const Login = () => {
               </span>
             </div>
           </div>
+
           <Link
             to="/signup"
             className="block w-full text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-3 px-4 rounded-lg transition"
